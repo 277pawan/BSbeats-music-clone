@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<head>
+<title>music</title>
+<meta name="viewport"content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="width"></head>
+<link rel="stylesheet" href="css/all.css">
+<body bgcolor="black">
+<body background="https://www.bing.com/images/blob?bcid=SxGTsmrbzg0EqxcxoNWLuD9SqbotqVTdP3g"height="1000"width="1500">
+<center>
+<h1 id="i1"style="color:#06fdfd;font-family:gothic,sans-serif;font-size:452%;">S</h1><h3 style="color:#06fdfd;font-size:301%;margin:-4%;text-indent:16%;position:absolute;left:1px;right:100px;bottom:697px;"><u>beats</u></h3>
+</center>
+<nav class="pawan1 ul ul1">
+<a href="settings.html"><i class="p9 fa-solid fa-screwdriver-wrench"></i></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"style="text-decoration:none"><i class="fa-solid fa-house"style="color:white"></i>Home</a>&nbsp;&nbsp;&nbsp;
+<a href="mymusic.html"style="text-decoration:none;color:black"><i class="fa-solid fa-music"style="color:red"></i><font color="white">My music</font></a>&nbsp;&nbsp;&nbsp;
+<a href="support.html"style="text-decoration:none;color:black"><i class="fa-solid fa-circle-info"style="color:red"></i><font color="white">Support</font></a>&nbsp;&nbsp;&nbsp;
+<a href="download.html"style="text-decoration:none;color:black"><i class="fa-solid fa-download"style="color:red"></i><font color="white">Download</font></a>&nbsp;&nbsp;&nbsp;
+<a href="sign up.html"style="text-decoration:none;color:black"><i class="fa-solid fa-user-plus"style="color:red"></i><font color="white">Sign up</font></a>&nbsp;&nbsp;&nbsp;
+<a href="log in.html"style="text-decoration:none;color:black"><i class="fa-solid fa-right-to-bracket"style="color:red"></i><font color="white">Log in</font></a>
+</nav>
+<hr>
+
+<center>
+<font color="white"><font color="red"><font size="05px"><i class="fa-brands fa-searchengin"></font></font></i><font-color="white"><font size="05px">Search:--
+<input class="s"type="search"value=""placeholder="search here songs"onchange="onsearch()"><button class="s1"onclick="onsearch()">search</button>
+</font></font>
+</center><br><br>
+<font color="white">Shuffle all(<img src="D:\wallpapers\istockphoto-954688898-190667a.jpg" height="15"width="15">)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sort by: <font>
+<select name="Sort by:-">
+<font color="red">
+<option value="date added">date added
+<option value="ascending order">ascending order
+<option value="descending order">descending order
+<option value="Alphabetical order">Alphabetical order</font>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Genere: <font color="red">all genere</font>
+<br><br>
+<style>
+.s{
+border-color:#00f5f1;
+font-color:black;
+font-size:100%;
+background-color:#c7c7c7;
+webkit-transition-duration:0.3s;
+}
+.ul{
+background-color:#162f36;
+color:black;
+-webkit-transition-duration:0.3s;
+font-size:20px;
+}
+.ul1:hover{
+background-color:#485454;
+color:white;
+box-shadow:none;
+}
+.pawan1 {
+font-family:Century gothic;
+background-color:#162f36;
+padding:05px;
+margin:04px;
+word-spacing:10px;
+font-size:20;
+}
+.p9{
+color:white;
+font-size:35px;
+word-spacing;20;
+text-indent:0px;
+padding:-10px;
+float:right;
+}
+.s:hover{
+background-color:white;
+font-color:black;
+}
+.s1{
+border-radius:0px 25px 25px 0px;
+background-color:#00f5f1;
+border-style:hidden;
+font-size:107%;
+padding:02px;
+
+}
+.s1:hover{
+background-color:#00a8f3;
+}
+.pawan{
+background-color:red;
+border radius:12%;
+}
+.p1{
+border-radius:90% 24% 34% 45%;
+background-color:#00f5f1;
+font-size:104%;
+color:black;
+font-family:calibri;
+-webkit-transition-duration:0.2s;
+}
+.p1:hover{
+background-color:#00a8f3;
+font-family:calibri;
+color:white;
+}
+.pawan4 ul li{
+display:inline-block;
+color :white;
+margin:05%;
+}    
+.space{
+word-spacing:83px;
+}
+
+.pawan{
+background-color:#454545;height:38px;width:100%
+}
+.b1{
+background-color:royalblue;
+border-radius:20%;
+color:white;
+float:right;
+padding:08px;
+}
+.b1:hover{
+background-color:blue;
+color:white;
+}
+</style>
+<marquee behavior="slide"direction="left"scrollamount="350">
+<header style="background-color:#454545;height:38px;width:100%">
+<p>00.Halamithi Habibo Hindi
+<audio id="mysong">
+<source src="https://pwdown.com/113627/Halamithi%20Habibo%20Hindi%20-%20Beast.mp3"type="audio/mpeg">
+</audio>
+
+<button class="p1"type="button"id="c1">Play</button>
+<script>
+c1.onclick=function(){
+if(mysong.paused)
+{
+mysong.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beast
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hindi Mp3 Songs 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anirudh Ravichander, Jonita Gandhi.
+<a href="https://pwdown.com/113627/Halamithi%20Habibo%20Hindi%20-%20Beast.mp3"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</header>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="300">
+<p class="space1"><b style="align:left">01.Jollyo Gymkhana&nbsp;&nbsp;&nbsp;</b>  
+<audio id="mysong1">
+<source src="https://pwdown.com/113627/Jollyo%20Gymkhana%20Hindi.mp3"type="audio/mpeg">
+</audio>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="p1" type="button"id="c2">Play</button>
+<script>
+c2.onclick=function(){
+if(mysong1.paused)
+{
+mysong1.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong1.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beast
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hindi mp3 songs&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anirudh Ravichandra.
+<a href="https://pwdown.com/113627/Jollyo%20Gymkhana%20Hindi.mp3"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="250">
+<p class="space2 pawan"><b class="align:left">02.Raamam Raaghavam</b>
+<audio id="mysong2">
+<source src="https://pwdown.com/113560/Raamam%20Raaghavam%20-%20Rrr.mp3"type="audio/mpeg">
+</audio>
+&nbsp;
+<button class="p1" type="button"id="c3">Play</button><script>
+c3.onclick=function(){
+if(mysong2.paused)
+{
+mysong2.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong2.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RRR
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;South Music 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vijay Prakash Chandana Bala Kalyan M M Keeravani
+<a href="https://pwdown.com/113560/Raamam%20Raaghavam%20-%20Rrr.mp3"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="225">
+<p class="space3"><b class="align:left">03.Kalaavathi Sarkaru...</b>
+<audio id="mysong3">
+<source src="https://pagaliworld.com/files/download/id/5526"type="audio/mpeg">
+</audio>
+&nbsp;
+<button class="p1" type="button"id="c4">Play</button>
+<script>
+c4.onclick=function(){
+if(mysong3.paused)
+{
+mysong3.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong3.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Republic Records 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sony Music publishing 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Sid Sriram
+<a href="https://pagaliworld.com/files/download/id/5526"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="200">
+<p class="space4 pawan"><b class="align:left">04Ala Vaikunthapurraloo</b>
+<audio id="mysong4">
+<source src="https://pagaliworld.com/files/download/id/4146"type="audio/mpeg">
+</audio>
+&nbsp;<button class="p1" type="button"id="c5">Play</button>
+<script>
+c5.onclick=function(){
+if(mysong4.paused)
+{
+mysong4.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong4.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ala Vaikunthapurramloo
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;South Indian songs
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sri Krishna, Priya Sisters
+<a href="https://pagaliworld.com/files/download/id/4146"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="175">
+<p class="space5"><b style="align:left">05.Sirivennela </b>
+<audio id="mysong5">
+<source src="https://pagaliworld.com/files/download/id/4566"type="audio/mpeg">
+</audio>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="p1" type="button"id="c6">Play</button>
+<script>
+c6.onclick=function(){
+if(mysong5.paused)
+{
+mysong5.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong5.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shyam Singh Roy
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sony music album 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anurag Kulkami.
+<a href="https://pagaliworld.com/files/download/id/4566"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="150">
+<p class=" space6 pawan"><b cstyle="align:left">06.Todun_Taak</b>
+<audio id="mysong6">
+<source src="https://pwdown.com/113549/Todun%20Taak%20-%20Toofaan.mp3"type="audio/mpeg">
+</audio>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="p1" type="button"id="c7">Play</button>
+<script>
+c7.onclick=function(){
+if(mysong6.paused)
+{
+mysong6.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong6.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Republic world 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sony music album 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEvil_(Pagalworld.pw)
+<a href="https://pwdown.com/113549/Todun%20Taak%20-%20Toofaan.mp3"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="125">
+<p class="space7"><b style="align:left">07.Unstopabble</b>
+<audio id="mysong7">
+<source src="https://pagaliworld.com/files/download/id/3750"type="audio/mpeg">
+</audio>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="p1" type="button"id="c8">Play</button>
+<script>
+c8.onclick=function(){
+if(mysong7.paused)
+{
+mysong7.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong7.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Republic world 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sony music album 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sia_Furler
+<a href="https://pagaliworld.com/files/download/id/3750"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="120">
+<p class="space8 pawan"><b style="align:left">08.Rockabye</b>
+<audio id="mysong8">
+<source src="https://pagaliworld.com/files/download/id/4826"type="audio/mpeg">
+</audio>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="p1" type="button"id="c9">Play</button>
+<script>
+c9.onclick=function(){
+if(mysong8.paused)
+{
+mysong8.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong8.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Republic world 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sony music album 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clean Bandit
+<a href="https://pagaliworld.com/files/download/id/4826"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="120">
+<p class="space9"><b style="align:left">09.Till_i_Colapse</b>
+<audio id="mysong9">
+<source src="https://www.naijafinix.com.ng/wp-content/uploads/2020/08/Eminem-Till-I-Collapse-via-Naijafinix.com_.mp3?_=1"type="audio/mpeg">
+</audio>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="p1" type="button"id="c10">Play</button>
+<script>
+c10.onclick=function(){
+if(mysong9.paused)
+{
+mysong9.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong9.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Republic world 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sony music album 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eminem
+<a href="https://www.naijafinix.com.ng/wp-content/uploads/2020/08/Eminem-Till-I-Collapse-via-Naijafinix.com_.mp3?_=1"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="115">
+<p class="space10 pawan"><b style="align:left">10.Venom</b>
+<audio id="mysong10">
+<source src="https://pagalworldi.com/files/download/id/3107"type="audio/mpeg">
+</audio>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="p1" type="button"id="c11">Play</button>
+<script>
+c11.onclick=function(){
+if(mysong10.paused)
+{
+mysong10.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong10.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venom
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sony music album 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sbeats.com 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eminem
+<a href="https://pagalworldi.com/files/download/id/3107"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+<marquee behavior="slide"direction="left"scrollamount="110">
+<p class="space10 pawan"><b style="align:left">11.Without_me</b>
+<audio id="mysong11">
+<source src="https://pagalworldi.com/files/download/id/3057"type="audio/mpeg">
+</audio>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="p1" type="button"id="c12">Play</button>
+<script>
+c12.onclick=function(){
+if(mysong11.paused)
+{
+mysong11.play();
+this.innerHTML="Pause";
+}
+else
+{
+mysong11.pause();
+this.innerHTML="Play";
+}
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Republic world 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sony music album 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Sbeats.com
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Halsey.
+<a href="https://pagalworldi.com/files/download/id/3057"download>
+<abbr title="Download"><button class="b1"><i class="fa fa-download"></i></button></a></abbr></p>
+</p>
+</marquee>
+</font>
+</body>
+</html>

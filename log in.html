@@ -1,0 +1,147 @@
+<?php
+$server_name="localhost:3307";
+$username="root";
+$password="NO";
+$database_name="login";
+
+$conn=mysqli_connect($server_name,$username,$password,$database_name);
+if(!$conn)
+{
+die("Failed to connect with database".mysqli_connect_error());
+}
+//$sql="select Password from susers where Email='$email'";
+//$result=mysqli_query($conn,$sql);
+if(isset($_POST['submit']))
+{
+$e=$_POST['Email'];
+$p=$_POST['Password'];
+$sql_query="insert into slogin(Email,Password)values('$e','$p')";
+$query="select *from susers where email='$e' and password='$p'";
+$result=mysqli_query($conn,$query);
+while($row=mysqli_fetch_assoc($result));
+{
+if($row['email']==$e&&
+$row['password']==$p)
+{
+echo "<script>alert('welcome to Sbeats')</script>";
+}
+else
+{
+echo "<script>alert('invalid email and password')</script>";
+include("home.php");
+}
+}
+mysqli_close($conn);
+}
+?>
+
+<html>
+<head>
+<title>form page</title>
+<meta name="viewport"content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="width"><style>
+.pawan{
+font-family:Arial;
+height:100px;
+width:100px;
+border:10px solid red;
+top:10%;
+}
+.image{
+font-family:cursive;
+color:white;
+position:absolute;
+top:px;
+left:1px;
+right:100px;
+bottom:498px;
+font-size:150px;
+}
+.pawan2{
+border-radius:-17%;
+color:white;
+width:500px;
+pading:02px;
+background-color:black;
+border:10px solid gray;
+}
+.vertical{
+margin:0%;
+border-left:5px solid blue;
+height:110%;
+float:left;
+}
+.vertical1{
+margin:-0%;
+border-right:5px solid blue;
+height:110%;
+float:right;
+}
+.p1{
+color:black;
+background-color:white;
+border-style:inset;
+font-size:15px;
+webkit-transition-duration:0.4s;
+}
+.p2{
+color:black;
+background-color:skyblue;
+border-style:inset;
+font-size:20px;
+webkit-transition-duration:0.4s;
+}
+.p2:hover{
+color:black;
+background-color:white;
+}
+.p3{
+color:black;
+background-color:skyblue;
+border-style:inset;
+font-size:20px;
+webkit-transition-duration:0.4s;
+}
+.p4:hover{
+color:black;
+background-color:white;
+}
+</style>
+</head>
+
+<link rel="stylesheet" href="css/all.css">
+<body bgcolor="black">
+<hr class="vertical">
+<hr class="vertical1">
+<center>
+<form method="POST">
+<legend>
+<h1 id="i1"style="color:#06fdfd;font-family:gothic,sans-serif;font-size:452%;position:relative;bottom:400%">S</h1><h3 style="color:#06fdfd;font-size:301%;margin:-6%;text-indent:15.5%;position:absolute;left:1px;right:100px;bottom:697px;"><u>beats</u></h3>
+<p class="image">
+<div class="pawan2">
+
+<br><br>
+<fieldset>
+<legend>Log in </legend><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="email"><font size="06">E-mail:-</label><br>
+<input class="p1"type="email"name="Email" size="50"required><br><br><br>
+<label>password:-</label><br>
+<input class="p1"type="password"name="Password"size="50"required><br><br></font>
+<input type="checkbox"value="checkbox"name="checkbox"required><font size="04">Save my email and password</font><br><br><br>
+<div class="fa-brands fa-facebook"style="color:blue"></div><a href="https://www.facebook.com"style="text-decoration:none"><font color="sky blue">&nbsp;&nbsp;Sign in from Facebook</font></a><br><br><br>
+
+<input class="p2"type="reset"type="button"onclick="alert('fill log in page properly')">
+<input class="p3 p4"type="submit"name="submit">
+
+</fieldset>
+
+</div>
+</form>
+<br>
+</center>
+</body>
+</html>
